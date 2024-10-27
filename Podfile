@@ -11,7 +11,9 @@ target 'TMDBMovieApp' do
   pod 'SwiftLint' 
   pod 'SwiftGen'
   pod 'Sourcery'
-  pod 'Moya', '~> 15.0'  
+  pod 'Moya', '~> 15.0'
+  pod 'Kingfisher', '~> 8.0'
+  
 
   target 'TMDBMovieAppTests' do
     inherit! :search_paths

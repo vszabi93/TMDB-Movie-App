@@ -5,4 +5,3 @@ extension Resolver {
         register(MovieListInteractorInput.self) { MovieListInteractor(movieService: resolve()) }
     }
 }
-

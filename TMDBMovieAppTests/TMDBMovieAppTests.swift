@@ -5,8 +5,8 @@
 //  Created by Varga Szabolcs on 2024. 10. 27..
 //
 
-import XCTest
 @testable import TMDBMovieApp
+import XCTest
 
 final class TMDBMovieAppTests: XCTestCase {
 

@@ -48,4 +48,3 @@ enum OriginalLanguage: String, Codable {
     case en
     case ko
 }
-

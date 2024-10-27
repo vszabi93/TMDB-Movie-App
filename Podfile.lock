@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.10.1)
+  - Kingfisher (8.1.0)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
@@ -12,6 +13,7 @@ PODS:
     - Sourcery (= 1.6.0)
 
 DEPENDENCIES:
+  - Kingfisher (~> 8.0)
   - Moya (~> 15.0)
   - Resolver
   - Sourcery
@@ -22,6 +24,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - Moya
     - Resolver
     - Sourcery
@@ -31,6 +34,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
+  Kingfisher: dfbf20b6249ed4ef6f18d6a96c847bce860bdb95
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   Resolver: 0e2ce51257e9366c54afe1b9e9be25059e9b9300
   Sourcery: 744f43178637c79bf23127dfe34e2103b3f28499
@@ -38,6 +42,6 @@ SPEC CHECKSUMS:
   SwiftLint: eb47480d47c982481592c195c221d11013a679cc
   SwiftyMocky: 014739247afadb65efb5bb92ede32c22b9365762
 
-PODFILE CHECKSUM: 180f8fd8935213e46e54ed7bb4c6c50d328fc172
+PODFILE CHECKSUM: f96b8b4b0b053af78e87dae6f4f30312cf36d498
 
 COCOAPODS: 1.15.2

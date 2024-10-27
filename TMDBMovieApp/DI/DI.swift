@@ -7,4 +7,3 @@ extension Resolver: ResolverRegistering {
         registerNetworkModule()
     }
 }
-

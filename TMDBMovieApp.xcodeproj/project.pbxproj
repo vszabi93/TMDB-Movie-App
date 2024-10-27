@@ -23,6 +23,13 @@
 		FC063CD92CCE8D2700AA7FBE /* DI+Interactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CD82CCE8D2700AA7FBE /* DI+Interactors.swift */; };
 		FC063CDB2CCE8D4200AA7FBE /* DI+Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CDA2CCE8D4200AA7FBE /* DI+Services.swift */; };
 		FC063CDD2CCE8D5500AA7FBE /* DI+NetworkModul.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CDC2CCE8D5500AA7FBE /* DI+NetworkModul.swift */; };
+		FC063CE32CCE957B00AA7FBE /* Movie.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC063CE12CCE957B00AA7FBE /* Movie.strings */; };
+		FC063CE72CCE95F000AA7FBE /* TMDBFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CE62CCE95F000AA7FBE /* TMDBFont.swift */; };
+		FC063CE92CCE964100AA7FBE /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CE82CCE963A00AA7FBE /* FontLoader.swift */; };
+		FC063CEB2CCE969800AA7FBE /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CEA2CCE969500AA7FBE /* Layouts.swift */; };
+		FC063CED2CCE96EB00AA7FBE /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CEC2CCE96EB00AA7FBE /* UIFont+Extensions.swift */; };
+		FC063CF02CCE97A500AA7FBE /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CEE2CCE97A500AA7FBE /* Assets.swift */; };
+		FC063CF12CCE97A500AA7FBE /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CEF2CCE97A500AA7FBE /* Localizable.swift */; };
 		FCE1BD982CCE721500FC97F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD8E2CCE721500FC97F0 /* AppDelegate.swift */; };
 		FCE1BD992CCE721500FC97F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD952CCE721500FC97F0 /* SceneDelegate.swift */; };
 		FCE1BD9A2CCE721500FC97F0 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD962CCE721500FC97F0 /* MovieListViewController.swift */; };
@@ -64,6 +71,13 @@
 		FC063CD82CCE8D2700AA7FBE /* DI+Interactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DI+Interactors.swift"; sourceTree = "<group>"; };
 		FC063CDA2CCE8D4200AA7FBE /* DI+Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DI+Services.swift"; sourceTree = "<group>"; };
 		FC063CDC2CCE8D5500AA7FBE /* DI+NetworkModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DI+NetworkModul.swift"; sourceTree = "<group>"; };
+		FC063CE22CCE957B00AA7FBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Movie.strings; sourceTree = "<group>"; };
+		FC063CE62CCE95F000AA7FBE /* TMDBFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBFont.swift; sourceTree = "<group>"; };
+		FC063CE82CCE963A00AA7FBE /* FontLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLoader.swift; sourceTree = "<group>"; };
+		FC063CEA2CCE969500AA7FBE /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
+		FC063CEC2CCE96EB00AA7FBE /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		FC063CEE2CCE97A500AA7FBE /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		FC063CEF2CCE97A500AA7FBE /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		FCE1BD4D2CCE702900FC97F0 /* TMDBMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDBMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE1BD632CCE702A00FC97F0 /* TMDBMovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBMovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE1BD8E2CCE721500FC97F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +171,7 @@
 			children = (
 				FC063CD12CCE8B2E00AA7FBE /* NSLayoutConstraints+Extensions.swift */,
 				FC063CD32CCE8B4300AA7FBE /* UITableView+Extensions.swift */,
+				FC063CEC2CCE96EB00AA7FBE /* UIFont+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,6 +185,33 @@
 				FC063CDC2CCE8D5500AA7FBE /* DI+NetworkModul.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		FC063CE02CCE955A00AA7FBE /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				FC063CEE2CCE97A500AA7FBE /* Assets.swift */,
+				FC063CEF2CCE97A500AA7FBE /* Localizable.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		FC063CE42CCE95C200AA7FBE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FC063CEA2CCE969500AA7FBE /* Layouts.swift */,
+				FC063CE52CCE95D200AA7FBE /* Font */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FC063CE52CCE95D200AA7FBE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FC063CE82CCE963A00AA7FBE /* FontLoader.swift */,
+				FC063CE62CCE95F000AA7FBE /* TMDBFont.swift */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		FCE1BD442CCE702900FC97F0 = {
@@ -195,6 +237,8 @@
 		FCE1BD972CCE721500FC97F0 /* TMDBMovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				FC063CE42CCE95C200AA7FBE /* Utils */,
+				FC063CE02CCE955A00AA7FBE /* Generated */,
 				FC063CD52CCE8CFE00AA7FBE /* DI */,
 				FC063CD02CCE8B1200AA7FBE /* Extensions */,
 				FC063CC62CCE849900AA7FBE /* Services */,
@@ -219,6 +263,7 @@
 		FCE1BDA72CCE74F900FC97F0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FC063CE12CCE957B00AA7FBE /* Movie.strings */,
 				FCE1BDAA2CCE754A00FC97F0 /* MovieCoordinator.swift */,
 				FCE1BDA92CCE751900FC97F0 /* MovieList */,
 			);
@@ -258,6 +303,8 @@
 				FCE1BD4A2CCE702900FC97F0 /* Frameworks */,
 				FCE1BD4B2CCE702900FC97F0 /* Resources */,
 				F3DC8440D3E20632AFD743F2 /* [CP] Embed Pods Frameworks */,
+				FC063CDE2CCE94A200AA7FBE /* SwiftLint */,
+				FC063CDF2CCE94CA00AA7FBE /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -333,6 +380,7 @@
 			files = (
 				FCE1BD9B2CCE721500FC97F0 /* Assets.xcassets in Resources */,
 				FCE1BD9D2CCE721500FC97F0 /* LaunchScreen.storyboard in Resources */,
+				FC063CE32CCE957B00AA7FBE /* Movie.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +472,42 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMDBMovieApp/Pods-TMDBMovieApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FC063CDE2CCE94A200AA7FBE /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftLint/swiftlint\" ]]; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\" --fix\nelse\n  echo \"error: SwiftLint is not installed. Run 'pod install --repo-update' to install it.\"\n  return -1\nfi\n";
+		};
+		FC063CDF2CCE94CA00AA7FBE /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" config run --config \".swiftgen.yml\"\nelse\n  echo \"error: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\n  return -1\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -432,21 +516,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC063CD72CCE8D0D00AA7FBE /* DI.swift in Sources */,
+				FC063CE92CCE964100AA7FBE /* FontLoader.swift in Sources */,
 				FC063CD42CCE8B4300AA7FBE /* UITableView+Extensions.swift in Sources */,
 				FC063CDB2CCE8D4200AA7FBE /* DI+Services.swift in Sources */,
+				FC063CE72CCE95F000AA7FBE /* TMDBFont.swift in Sources */,
 				FC063CCF2CCE8A8500AA7FBE /* MovieCell.swift in Sources */,
 				FC063CBD2CCE827C00AA7FBE /* Api.swift in Sources */,
 				FCE1BD982CCE721500FC97F0 /* AppDelegate.swift in Sources */,
 				FCE1BD992CCE721500FC97F0 /* SceneDelegate.swift in Sources */,
+				FC063CED2CCE96EB00AA7FBE /* UIFont+Extensions.swift in Sources */,
 				FC063CC32CCE846200AA7FBE /* MovieDetailsResponse.swift in Sources */,
 				FCE1BDAD2CCE757C00FC97F0 /* AppCoordinator.swift in Sources */,
 				FCE1BDAB2CCE754C00FC97F0 /* MovieCoordinator.swift in Sources */,
 				FC063CD22CCE8B2E00AA7FBE /* NSLayoutConstraints+Extensions.swift in Sources */,
 				FC063CCA2CCE853B00AA7FBE /* MovieListInteractor.swift in Sources */,
 				FC063CCC2CCE85F100AA7FBE /* MovieListPresenter.swift in Sources */,
+				FC063CF02CCE97A500AA7FBE /* Assets.swift in Sources */,
+				FC063CF12CCE97A500AA7FBE /* Localizable.swift in Sources */,
 				FC063CD92CCE8D2700AA7FBE /* DI+Interactors.swift in Sources */,
 				FC063CC12CCE844B00AA7FBE /* MovieResponse.swift in Sources */,
 				FC063CBF2CCE842600AA7FBE /* NetworkModule.swift in Sources */,
+				FC063CEB2CCE969800AA7FBE /* Layouts.swift in Sources */,
 				FC063CDD2CCE8D5500AA7FBE /* DI+NetworkModul.swift in Sources */,
 				FCE1BD9A2CCE721500FC97F0 /* MovieListViewController.swift in Sources */,
 				FC063CC82CCE84AC00AA7FBE /* MovieService.swift in Sources */,
@@ -472,6 +562,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FC063CE12CCE957B00AA7FBE /* Movie.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC063CE22CCE957B00AA7FBE /* en */,
+			);
+			name = Movie.strings;
+			sourceTree = "<group>";
+		};
 		FCE1BD922CCE721500FC97F0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

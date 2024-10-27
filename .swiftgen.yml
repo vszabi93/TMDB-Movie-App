@@ -1,0 +1,16 @@
+strings:
+  inputs:
+      - TMDBMovieApp/Scenes/en.lproj/Movie.strings
+
+  outputs:
+    params:
+      enumName: Rsc
+    templateName: structured-swift5
+    output: TMDBMovieApp/Generated/Localizable.swift
+
+xcassets:
+  inputs:
+    - TMDBMovieApp/Resources/Assets.xcassets
+  outputs:
+    templateName: swift5
+    output: TMDBMovieApp/Generated/Assets.swift
