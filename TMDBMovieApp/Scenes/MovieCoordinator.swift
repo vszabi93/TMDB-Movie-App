@@ -1,10 +1,11 @@
+import Resolver
 import UIKit
 
 protocol MovieCoordinatorInput: AnyObject {
     func start()
 
     func showMovieList()
-    func showMovieDetails(with id: String)
+    func showMovieDetails(with id: Int)
 }
 
 final class MovieCoordinator {
@@ -22,9 +23,11 @@ final class MovieCoordinator {
 
 extension MovieCoordinator: MovieCoordinatorInput {
     func showMovieList() {
-        let viewControler = MovieListViewController()
-        navigationController?.pushViewController(viewControler, animated: true)
+        let presenter = MovieListPresenter(coordinator: self, interactor: Resolver.resolve())
+        let viewController = MovieListViewController(presenter: presenter)
+        presenter.view = viewController
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
-    func showMovieDetails(with id: String) {}
+    func showMovieDetails(with id: Int) { }
 }

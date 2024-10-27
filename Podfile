@@ -10,7 +10,8 @@ target 'TMDBMovieApp' do
   pod 'Resolver'
   pod 'SwiftLint' 
   pod 'SwiftGen'
-  pod 'Sourcery'  
+  pod 'Sourcery'
+  pod 'Moya', '~> 15.0'  
 
   target 'TMDBMovieAppTests' do
     inherit! :search_paths
