@@ -3,36 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		FCE1BD372CCE69C900FC97F0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD2C2CCE69C900FC97F0 /* AppCoordinator.swift */; };
+		FCE1BD382CCE69C900FC97F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD2D2CCE69C900FC97F0 /* AppDelegate.swift */; };
+		FCE1BD392CCE69C900FC97F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD342CCE69C900FC97F0 /* SceneDelegate.swift */; };
+		FCE1BD3A2CCE69C900FC97F0 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD352CCE69C900FC97F0 /* MovieListViewController.swift */; };
+		FCE1BD3B2CCE69C900FC97F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE1BD2E2CCE69C900FC97F0 /* Assets.xcassets */; };
+		FCE1BD3D2CCE69C900FC97F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE1BD312CCE69C900FC97F0 /* LaunchScreen.storyboard */; };
+		FCE1BD402CCE69E500FC97F0 /* MovieCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD3F2CCE69E500FC97F0 /* MovieCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCE1BD892CCE706200FC97F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCE1BD032CCE664F00FC97F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCE1BD0A2CCE664F00FC97F0;
+			remoteInfo = TMDBMovieApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FCE1BD0B2CCE664F00FC97F0 /* TMDBMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDBMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE1BD2C2CCE69C900FC97F0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FCE1BD2D2CCE69C900FC97F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCE1BD2E2CCE69C900FC97F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCE1BD2F2CCE69C900FC97F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE1BD302CCE69C900FC97F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCE1BD342CCE69C900FC97F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FCE1BD352CCE69C900FC97F0 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		FCE1BD3F2CCE69E500FC97F0 /* MovieCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCoordinator.swift; sourceTree = "<group>"; };
+		FCE1BD852CCE706200FC97F0 /* TMDBMovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBMovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FCE1BD1D2CCE665000FC97F0 /* Exceptions for "TMDBMovieApp" folder in "TMDBMovieApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = FCE1BD0A2CCE664F00FC97F0 /* TMDBMovieApp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FCE1BD0D2CCE664F00FC97F0 /* TMDBMovieApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FCE1BD1D2CCE665000FC97F0 /* Exceptions for "TMDBMovieApp" folder in "TMDBMovieApp" target */,
-			);
-			path = TMDBMovieApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FCE1BD082CCE664F00FC97F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE1BD822CCE706200FC97F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,7 +61,8 @@
 		FCE1BD022CCE664F00FC97F0 = {
 			isa = PBXGroup;
 			children = (
-				FCE1BD0D2CCE664F00FC97F0 /* TMDBMovieApp */,
+				FCE1BD362CCE69C900FC97F0 /* TMDBMovieApp */,
+				FCE1BD862CCE706200FC97F0 /* TMDBMovieAppTests */,
 				FCE1BD0C2CCE664F00FC97F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,8 +71,56 @@
 			isa = PBXGroup;
 			children = (
 				FCE1BD0B2CCE664F00FC97F0 /* TMDBMovieApp.app */,
+				FCE1BD852CCE706200FC97F0 /* TMDBMovieAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FCE1BD2B2CCE69C900FC97F0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FCE1BD432CCE6CAE00FC97F0 /* MovieDetails */,
+				FCE1BD422CCE6CA300FC97F0 /* MovieList */,
+				FCE1BD3F2CCE69E500FC97F0 /* MovieCoordinator.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FCE1BD362CCE69C900FC97F0 /* TMDBMovieApp */ = {
+			isa = PBXGroup;
+			children = (
+				FCE1BD412CCE6A7100FC97F0 /* Resources */,
+				FCE1BD2B2CCE69C900FC97F0 /* Scenes */,
+				FCE1BD2C2CCE69C900FC97F0 /* AppCoordinator.swift */,
+				FCE1BD2D2CCE69C900FC97F0 /* AppDelegate.swift */,
+				FCE1BD342CCE69C900FC97F0 /* SceneDelegate.swift */,
+			);
+			path = TMDBMovieApp;
+			sourceTree = "<group>";
+		};
+		FCE1BD412CCE6A7100FC97F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCE1BD2E2CCE69C900FC97F0 /* Assets.xcassets */,
+				FCE1BD2F2CCE69C900FC97F0 /* Info.plist */,
+				FCE1BD312CCE69C900FC97F0 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCE1BD422CCE6CA300FC97F0 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				FCE1BD352CCE69C900FC97F0 /* MovieListViewController.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		FCE1BD432CCE6CAE00FC97F0 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,15 +138,35 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				FCE1BD0D2CCE664F00FC97F0 /* TMDBMovieApp */,
-			);
 			name = TMDBMovieApp;
 			packageProductDependencies = (
 			);
 			productName = TMDBMovieApp;
 			productReference = FCE1BD0B2CCE664F00FC97F0 /* TMDBMovieApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FCE1BD842CCE706200FC97F0 /* TMDBMovieAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE1BD8B2CCE706200FC97F0 /* Build configuration list for PBXNativeTarget "TMDBMovieAppTests" */;
+			buildPhases = (
+				FCE1BD812CCE706200FC97F0 /* Sources */,
+				FCE1BD822CCE706200FC97F0 /* Frameworks */,
+				FCE1BD832CCE706200FC97F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCE1BD8A2CCE706200FC97F0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FCE1BD862CCE706200FC97F0 /* TMDBMovieAppTests */,
+			);
+			name = TMDBMovieAppTests;
+			packageProductDependencies = (
+			);
+			productName = TMDBMovieAppTests;
+			productReference = FCE1BD852CCE706200FC97F0 /* TMDBMovieAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,9 +181,14 @@
 					FCE1BD0A2CCE664F00FC97F0 = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					FCE1BD842CCE706200FC97F0 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = FCE1BD0A2CCE664F00FC97F0;
+					};
 				};
 			};
 			buildConfigurationList = FCE1BD062CCE664F00FC97F0 /* Build configuration list for PBXProject "TMDBMovieApp" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,19 +196,27 @@
 				Base,
 			);
 			mainGroup = FCE1BD022CCE664F00FC97F0;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = FCE1BD0C2CCE664F00FC97F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FCE1BD0A2CCE664F00FC97F0 /* TMDBMovieApp */,
+				FCE1BD842CCE706200FC97F0 /* TMDBMovieAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FCE1BD092CCE664F00FC97F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE1BD3B2CCE69C900FC97F0 /* Assets.xcassets in Resources */,
+				FCE1BD3D2CCE69C900FC97F0 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE1BD832CCE706200FC97F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,10 +230,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE1BD372CCE69C900FC97F0 /* AppCoordinator.swift in Sources */,
+				FCE1BD402CCE69E500FC97F0 /* MovieCoordinator.swift in Sources */,
+				FCE1BD382CCE69C900FC97F0 /* AppDelegate.swift in Sources */,
+				FCE1BD392CCE69C900FC97F0 /* SceneDelegate.swift in Sources */,
+				FCE1BD3A2CCE69C900FC97F0 /* MovieListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE1BD812CCE706200FC97F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCE1BD8A2CCE706200FC97F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCE1BD0A2CCE664F00FC97F0 /* TMDBMovieApp */;
+			targetProxy = FCE1BD892CCE706200FC97F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCE1BD312CCE69C900FC97F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE1BD302CCE69C900FC97F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FCE1BD1F2CCE665000FC97F0 /* Debug */ = {
@@ -146,12 +275,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TMDBMovieApp/Info.plist;
+				INFOPLIST_FILE = TMDBMovieApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -159,9 +286,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = szabolcsvarga.TMDBMovieApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -173,12 +304,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TMDBMovieApp/Info.plist;
+				INFOPLIST_FILE = TMDBMovieApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -186,9 +315,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = szabolcsvarga.TMDBMovieApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -311,6 +444,40 @@
 			};
 			name = Release;
 		};
+		FCE1BD8C2CCE706200FC97F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = szabolcsvarga.TMDBMovieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDBMovieApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDBMovieApp";
+			};
+			name = Debug;
+		};
+		FCE1BD8D2CCE706200FC97F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = szabolcsvarga.TMDBMovieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDBMovieApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDBMovieApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -328,6 +495,15 @@
 			buildConfigurations = (
 				FCE1BD1F2CCE665000FC97F0 /* Debug */,
 				FCE1BD202CCE665000FC97F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE1BD8B2CCE706200FC97F0 /* Build configuration list for PBXNativeTarget "TMDBMovieAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE1BD8C2CCE706200FC97F0 /* Debug */,
+				FCE1BD8D2CCE706200FC97F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
