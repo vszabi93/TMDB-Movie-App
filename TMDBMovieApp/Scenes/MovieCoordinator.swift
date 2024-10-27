@@ -1,6 +1,7 @@
 import Resolver
 import UIKit
 
+// sourcery: AutoMockable
 protocol MovieCoordinatorInput: AnyObject {
     func start()
 

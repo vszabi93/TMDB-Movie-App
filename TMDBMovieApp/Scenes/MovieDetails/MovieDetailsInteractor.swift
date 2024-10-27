@@ -1,3 +1,4 @@
+// sourcery: AutoMockable
 protocol MovieDetailsInteractorInput: AnyObject {
     func getMovieDetails(movieId: Int, completion: @escaping (Result<MovieDetailResponse, MovieError>) -> Void)
 }

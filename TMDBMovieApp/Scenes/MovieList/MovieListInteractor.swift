@@ -1,3 +1,4 @@
+// sourcery: AutoMockable
 protocol MovieListInteractorInput: AnyObject {
     func getPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, MovieError>) -> Void)
     func getSearchResult(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> Void)

@@ -10,7 +10,7 @@ protocol MovieDetailsView: AnyObject {
 final class MovieDetailsViewController: UIViewController {
     private(set) var presenter: MovieDetailsPresenterInput
 
-    private let Str = Rsc.MovieDetails.self // swiftlint:disable:this identifier_name
+    private let Str = Rsc.Movie.MovieDetails.self // swiftlint:disable:this identifier_name
 
     private enum Constants {
         static let starImageSize: CGSize = .init(width: 20, height: 20)

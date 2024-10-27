@@ -1,0 +1,13 @@
+sourceryCommand: null
+sourceryTemplate: null
+IntegrationTests:
+  sources:
+    include:
+    - ./TMDBMovieApp
+  output: ./TMDBMovieAppTests/Generated/Mock.generated.swift
+  targets:
+  - TMDBMovieAppTests
+  testable:
+  - TMDBMovieApp
+  import:
+  - UIKit

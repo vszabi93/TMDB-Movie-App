@@ -1,5 +1,6 @@
 import UIKit
 
+// sourcery: AutoMockable
 protocol MovieListView: AnyObject {
     var presenter: MovieListPresenterInput { get }
 
