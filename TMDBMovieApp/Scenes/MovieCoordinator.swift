@@ -28,4 +28,3 @@ extension MovieCoordinator: MovieCoordinatorInput {
 
     func showMovieDetails(with id: String) {}
 }
-

@@ -6,17 +6,16 @@ target 'TMDBMovieApp' do
   use_frameworks!
 
   # Pods for TMDBMovieApp
+
   pod 'Resolver'
   pod 'SwiftLint' 
   pod 'SwiftGen'
   pod 'Sourcery'  
-  pod 'Moya', '~> 15.0'
 
-  target 'KLMHomeworkTests' do
+  target 'TMDBMovieAppTests' do
     inherit! :search_paths
     # Pods for testing
-    pod "SwiftyMocky"
-
+ 	pod "SwiftyMocky"
   end
 
 end
