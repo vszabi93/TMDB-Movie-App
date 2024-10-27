@@ -108,6 +108,7 @@ extension MovieListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.didTapCell(at: indexPath.row)
+        tableview.deselectRow(at: indexPath, animated: false)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

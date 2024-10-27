@@ -84,8 +84,7 @@ class MovieCell: UITableViewCell {
     func configure(movie: MovieResult) {
         titleLabel.text = movie.title
         releaseLabel.text = movie.releaseDate
-        let url = URL(string: "https://image.tmdb.org/t/p/w500\(movie.posterPath ?? "")")
-        poster.kf.setImage(with: url)
+        poster.kf.setImage(with: URL.getImageURL(posterPath: movie.posterPath ?? ""))
         voteAvarageLabel.text = "\(movie.voteAverage ?? .zero)"
     }
 }

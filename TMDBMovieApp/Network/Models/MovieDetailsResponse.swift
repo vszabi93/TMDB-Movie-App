@@ -18,6 +18,10 @@ struct MovieDetailResponse: Codable {
     let status, tagline, title: String?
     let video: Bool?
     let voteAverage, voteCount: Double?
+    var runtimeInHourAndMinutes: (hours: Int, minutes: Int) {
+        guard let runtime else { return (0, 0) }
+        return convertMinutesToHoursAndMinutes(totalMinutes: runtime)
+    }
 
     enum CodingKeys: String, CodingKey {
         case adult
@@ -36,6 +40,12 @@ struct MovieDetailResponse: Codable {
         case status, tagline, title, video
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
+    }
+
+    private func convertMinutesToHoursAndMinutes(totalMinutes: Int) -> (hours: Int, minutes: Int) {
+        let hours = totalMinutes / 60
+        let minutes = totalMinutes % 60
+        return (hours, minutes)
     }
 }
 

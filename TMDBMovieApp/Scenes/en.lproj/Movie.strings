@@ -1,1 +1,3 @@
-
+"MovieDetails.Rating.title" = "Rating";
+"MovieDetails.Runtime.title" = "Runtime";
+"MovieDetails.Language.title" = "Language";

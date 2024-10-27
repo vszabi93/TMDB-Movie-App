@@ -19,6 +19,12 @@ final class MovieDetailsPresenter {
         self.interactor = interactor
         self.movieId = movieId
     }
+
+    private func convertMinutesToHoursAndMinutes(totalMinutes: Int) -> (hours: Int, minutes: Int) {
+        let hours = totalMinutes / 60
+        let minutes = totalMinutes % 60
+        return (hours, minutes)
+    }
 }
 
 extension MovieDetailsPresenter: MovieDetailsPresenterInput {
