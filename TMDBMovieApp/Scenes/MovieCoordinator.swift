@@ -29,5 +29,10 @@ extension MovieCoordinator: MovieCoordinatorInput {
         navigationController?.pushViewController(viewController, animated: true)
     }
 
-    func showMovieDetails(with id: Int) { }
+    func showMovieDetails(with id: Int) {
+        let presenter = MovieDetailsPresenter(coordinator: self, interactor: Resolver.resolve(), movieId: id)
+        let viewController = MovieDetailsViewController(presenter: presenter)
+        presenter.view = viewController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
