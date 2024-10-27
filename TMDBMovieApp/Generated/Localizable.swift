@@ -10,18 +10,30 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Rsc {
-  internal enum MovieDetails {
-    internal enum Language {
-      /// Language
-      internal static let title = Rsc.tr("Movie", "MovieDetails.Language.title", fallback: "Language")
+  internal enum Error {
+    internal enum ErrorView {
+      /// Unexpected error occured
+      internal static let description = Rsc.tr("Error", "ErrorView.description", fallback: "Unexpected error occured")
+      internal enum Button {
+        /// OK
+        internal static let title = Rsc.tr("Error", "ErrorView.button.title", fallback: "OK")
+      }
     }
-    internal enum Rating {
-      /// Rating
-      internal static let title = Rsc.tr("Movie", "MovieDetails.Rating.title", fallback: "Rating")
-    }
-    internal enum Runtime {
-      /// Runtime
-      internal static let title = Rsc.tr("Movie", "MovieDetails.Runtime.title", fallback: "Runtime")
+  }
+  internal enum Movie {
+    internal enum MovieDetails {
+      internal enum Language {
+        /// Language
+        internal static let title = Rsc.tr("Movie", "MovieDetails.Language.title", fallback: "Language")
+      }
+      internal enum Rating {
+        /// Rating
+        internal static let title = Rsc.tr("Movie", "MovieDetails.Rating.title", fallback: "Rating")
+      }
+      internal enum Runtime {
+        /// Runtime
+        internal static let title = Rsc.tr("Movie", "MovieDetails.Runtime.title", fallback: "Runtime")
+      }
     }
   }
 }

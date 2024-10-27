@@ -59,8 +59,8 @@ final class MovieListPresenter {
                 }
                 self.view?.updateTableView()
             case .failure(let error):
-                // TODO handle error
                 print(error.localizedDescription)
+                self.handleError(error)
             }
         }
     }
@@ -85,8 +85,9 @@ final class MovieListPresenter {
                 }
                 self.view?.updateTableView()
             case .failure(let error):
-                // TODO handle error
                 print(error.localizedDescription)
+                self.handleError(error)
+
             }
         }
     }
@@ -132,3 +133,7 @@ extension MovieListPresenter: MovieListPresenterInput {
         getSearchMovies(text: text)
     }
 }
+
+// MARK: - MoviesErrorHandleable
+
+extension MovieListPresenter: MoviesErrorHandleable {}

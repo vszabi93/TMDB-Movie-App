@@ -1,6 +1,7 @@
 strings:
   inputs:
       - TMDBMovieApp/Scenes/en.lproj/Movie.strings
+      - TMDBMovieApp/Scenes/Error/en.lproj/Error.strings
 
   outputs:
     params:

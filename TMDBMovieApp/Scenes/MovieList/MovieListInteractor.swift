@@ -1,6 +1,6 @@
 protocol MovieListInteractorInput: AnyObject {
-    func getPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, Error>) -> Void)
-    func getSearchResult(query: String, completion: @escaping (Result<MovieResponse, Error>) -> Void)
+    func getPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, MovieError>) -> Void)
+    func getSearchResult(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> Void)
 }
 
 final class MovieListInteractor {
@@ -16,23 +16,23 @@ final class MovieListInteractor {
 }
 
 extension MovieListInteractor: MovieListInteractorInput {
-    func getPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, Error>) -> Void) {
+    func getPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, MovieError>) -> Void) {
         movieService.fetchPopularMovies(page: page) { result in
             switch result {
             case .success(let response):
                 completion(.success(response))
             case .failure(let error):
-                completion(.failure(error))
+                completion(.failure(.getMoviesFailed))
             }
         }
     }
-    func getSearchResult(query: String, completion: @escaping (Result<MovieResponse, Error>) -> Void) {
+    func getSearchResult(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> Void) {
         movieService.fetchSearchResult(query: query) { result in
             switch result {
             case .success(let response):
                 completion(.success(response))
             case .failure(let error):
-                completion(.failure(error))
+                completion(.failure(.getMoviesFailed))
             }
         }
     }

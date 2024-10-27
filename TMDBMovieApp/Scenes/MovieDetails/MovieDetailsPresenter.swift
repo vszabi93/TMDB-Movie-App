@@ -36,6 +36,7 @@ extension MovieDetailsPresenter: MovieDetailsPresenterInput {
                 self?.view?.updateDetails(with: details)
             case .failure(let error):
                 print(error.localizedDescription)
+                self?.handleError(error)
             }
         }
     }
@@ -44,3 +45,7 @@ extension MovieDetailsPresenter: MovieDetailsPresenterInput {
         coordinator.showMovieList()
     }
 }
+
+// MARK: - MoviesErrorHandleable
+
+extension MovieDetailsPresenter: MoviesErrorHandleable {}

@@ -1,7 +1,7 @@
 protocol MovieServiceInput {
-    func fetchPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, Error>) -> Void)
-    func fetchMovieDetail(movieId: Int, completion: @escaping (Result<MovieDetailResponse, Error>) -> Void)
-    func fetchSearchResult(query: String, completion: @escaping (Result<MovieResponse, Error>) -> Void)
+    func fetchPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, NetworkError>) -> Void)
+    func fetchMovieDetail(movieId: Int, completion: @escaping (Result<MovieDetailResponse, NetworkError>) -> Void)
+    func fetchSearchResult(query: String, completion: @escaping (Result<MovieResponse, NetworkError>) -> Void)
 }
 
 final class MovieService {
@@ -18,15 +18,15 @@ final class MovieService {
 }
 
 extension MovieService: MovieServiceInput {
-    func fetchPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, Error>) -> Void) {
+    func fetchPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, NetworkError>) -> Void) {
         networkModule.fetchPopularMovies(page: page, completion: completion)
     }
 
-    func fetchMovieDetail(movieId: Int, completion: @escaping (Result<MovieDetailResponse, Error>) -> Void) {
+    func fetchMovieDetail(movieId: Int, completion: @escaping (Result<MovieDetailResponse, NetworkError>) -> Void) {
         networkModule.fetchMovieDetail(movieId: movieId, completion: completion)
     }
 
-    func fetchSearchResult(query: String, completion: @escaping (Result<MovieResponse, Error>) -> Void) {
+    func fetchSearchResult(query: String, completion: @escaping (Result<MovieResponse, NetworkError>) -> Void) {
         networkModule.fetchSearchResult(query: query, completion: completion)
     }
 }

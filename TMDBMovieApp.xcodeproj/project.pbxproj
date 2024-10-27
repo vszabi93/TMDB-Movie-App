@@ -35,6 +35,13 @@
 		FC063CF82CCEADFC00AA7FBE /* MovieDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CF72CCEADF500AA7FBE /* MovieDetailsPresenter.swift */; };
 		FC063CFA2CCEAE0800AA7FBE /* MovieDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CF92CCEAE0000AA7FBE /* MovieDetailsInteractor.swift */; };
 		FC063CFC2CCEB6FA00AA7FBE /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063CFB2CCEB6F100AA7FBE /* URL+Extension.swift */; };
+		FC063D042CCEC93F00AA7FBE /* ErrorDisplayableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063D032CCEC93D00AA7FBE /* ErrorDisplayableViewController.swift */; };
+		FC063D072CCEC95B00AA7FBE /* Error.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC063D052CCEC95B00AA7FBE /* Error.strings */; };
+		FC063D092CCEC98200AA7FBE /* CommonErrorHandleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063D082CCEC98200AA7FBE /* CommonErrorHandleable.swift */; };
+		FC063D0B2CCEC99900AA7FBE /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063D0A2CCEC99700AA7FBE /* CommonError.swift */; };
+		FC063D0D2CCEC9AD00AA7FBE /* MovieError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063D0C2CCEC9AA00AA7FBE /* MovieError.swift */; };
+		FC063D0F2CCEC9D500AA7FBE /* MoviesErrorHandleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063D0E2CCEC9CD00AA7FBE /* MoviesErrorHandleable.swift */; };
+		FC063D122CCECA5500AA7FBE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC063D112CCECA5300AA7FBE /* NetworkError.swift */; };
 		FCE1BD982CCE721500FC97F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD8E2CCE721500FC97F0 /* AppDelegate.swift */; };
 		FCE1BD992CCE721500FC97F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD952CCE721500FC97F0 /* SceneDelegate.swift */; };
 		FCE1BD9A2CCE721500FC97F0 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE1BD962CCE721500FC97F0 /* MovieListViewController.swift */; };
@@ -88,6 +95,13 @@
 		FC063CF72CCEADF500AA7FBE /* MovieDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsPresenter.swift; sourceTree = "<group>"; };
 		FC063CF92CCEAE0000AA7FBE /* MovieDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsInteractor.swift; sourceTree = "<group>"; };
 		FC063CFB2CCEB6F100AA7FBE /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		FC063D032CCEC93D00AA7FBE /* ErrorDisplayableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDisplayableViewController.swift; sourceTree = "<group>"; };
+		FC063D062CCEC95B00AA7FBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Error.strings; sourceTree = "<group>"; };
+		FC063D082CCEC98200AA7FBE /* CommonErrorHandleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonErrorHandleable.swift; sourceTree = "<group>"; };
+		FC063D0A2CCEC99700AA7FBE /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		FC063D0C2CCEC9AA00AA7FBE /* MovieError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieError.swift; sourceTree = "<group>"; };
+		FC063D0E2CCEC9CD00AA7FBE /* MoviesErrorHandleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesErrorHandleable.swift; sourceTree = "<group>"; };
+		FC063D112CCECA5300AA7FBE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		FCE1BD4D2CCE702900FC97F0 /* TMDBMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDBMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE1BD632CCE702A00FC97F0 /* TMDBMovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBMovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE1BD8E2CCE721500FC97F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +158,7 @@
 		FC063CB82CCE803E00AA7FBE /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FC063D102CCECA4B00AA7FBE /* Error */,
 				FC063CB92CCE804800AA7FBE /* Models */,
 				FC063CBC2CCE827C00AA7FBE /* Api.swift */,
 				FC063CBE2CCE842600AA7FBE /* NetworkModule.swift */,
@@ -236,6 +251,27 @@
 			path = MovieDetails;
 			sourceTree = "<group>";
 		};
+		FC063D022CCEC93100AA7FBE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				FC063D0E2CCEC9CD00AA7FBE /* MoviesErrorHandleable.swift */,
+				FC063D0C2CCEC9AA00AA7FBE /* MovieError.swift */,
+				FC063D0A2CCEC99700AA7FBE /* CommonError.swift */,
+				FC063D032CCEC93D00AA7FBE /* ErrorDisplayableViewController.swift */,
+				FC063D052CCEC95B00AA7FBE /* Error.strings */,
+				FC063D082CCEC98200AA7FBE /* CommonErrorHandleable.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		FC063D102CCECA4B00AA7FBE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				FC063D112CCECA5300AA7FBE /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		FCE1BD442CCE702900FC97F0 = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +321,7 @@
 		FCE1BDA72CCE74F900FC97F0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FC063D022CCEC93100AA7FBE /* Error */,
 				FC063CF42CCEADDA00AA7FBE /* MovieDetails */,
 				FC063CE12CCE957B00AA7FBE /* Movie.strings */,
 				FCE1BDAA2CCE754A00FC97F0 /* MovieCoordinator.swift */,
@@ -404,6 +441,7 @@
 				FCE1BD9B2CCE721500FC97F0 /* Assets.xcassets in Resources */,
 				FCE1BD9D2CCE721500FC97F0 /* LaunchScreen.storyboard in Resources */,
 				FC063CE32CCE957B00AA7FBE /* Movie.strings in Resources */,
+				FC063D072CCEC95B00AA7FBE /* Error.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,12 +581,17 @@
 				FC063CE92CCE964100AA7FBE /* FontLoader.swift in Sources */,
 				FC063CF62CCEADEE00AA7FBE /* MovieDetailsViewController.swift in Sources */,
 				FC063CD42CCE8B4300AA7FBE /* UITableView+Extensions.swift in Sources */,
+				FC063D0D2CCEC9AD00AA7FBE /* MovieError.swift in Sources */,
 				FC063CDB2CCE8D4200AA7FBE /* DI+Services.swift in Sources */,
 				FC063CE72CCE95F000AA7FBE /* TMDBFont.swift in Sources */,
+				FC063D0F2CCEC9D500AA7FBE /* MoviesErrorHandleable.swift in Sources */,
 				FC063CCF2CCE8A8500AA7FBE /* MovieCell.swift in Sources */,
+				FC063D042CCEC93F00AA7FBE /* ErrorDisplayableViewController.swift in Sources */,
+				FC063D092CCEC98200AA7FBE /* CommonErrorHandleable.swift in Sources */,
 				FC063CBD2CCE827C00AA7FBE /* Api.swift in Sources */,
 				FCE1BD982CCE721500FC97F0 /* AppDelegate.swift in Sources */,
 				FCE1BD992CCE721500FC97F0 /* SceneDelegate.swift in Sources */,
+				FC063D0B2CCEC99900AA7FBE /* CommonError.swift in Sources */,
 				FC063CED2CCE96EB00AA7FBE /* UIFont+Extensions.swift in Sources */,
 				FC063CF32CCEACF600AA7FBE /* Debounce.swift in Sources */,
 				FC063CC32CCE846200AA7FBE /* MovieDetailsResponse.swift in Sources */,
@@ -566,6 +609,7 @@
 				FC063CBF2CCE842600AA7FBE /* NetworkModule.swift in Sources */,
 				FC063CEB2CCE969800AA7FBE /* Layouts.swift in Sources */,
 				FC063CDD2CCE8D5500AA7FBE /* DI+NetworkModul.swift in Sources */,
+				FC063D122CCECA5500AA7FBE /* NetworkError.swift in Sources */,
 				FCE1BD9A2CCE721500FC97F0 /* MovieListViewController.swift in Sources */,
 				FC063CC82CCE84AC00AA7FBE /* MovieService.swift in Sources */,
 			);
@@ -596,6 +640,14 @@
 				FC063CE22CCE957B00AA7FBE /* en */,
 			);
 			name = Movie.strings;
+			sourceTree = "<group>";
+		};
+		FC063D052CCEC95B00AA7FBE /* Error.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC063D062CCEC95B00AA7FBE /* en */,
+			);
+			name = Error.strings;
 			sourceTree = "<group>";
 		};
 		FCE1BD922CCE721500FC97F0 /* LaunchScreen.storyboard */ = {
