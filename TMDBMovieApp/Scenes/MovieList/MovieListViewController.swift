@@ -10,6 +10,10 @@ protocol MovieListView: AnyObject {
 final class MovieListViewController: UIViewController {
     private(set) var presenter: MovieListPresenterInput
 
+    private enum Constants {
+        static let buttonHeight: CGFloat = 50
+    }
+
     private lazy var tableview: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.backgroundColor = .clear
@@ -40,6 +44,16 @@ final class MovieListViewController: UIViewController {
         return searchBar
     }()
 
+    private lazy var switchPreferedMoviesButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Switch Prefered Movies", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .systemBlue
+        button.addTarget(self, action: #selector(changePreferedMovies), for: .touchUpInside)
+        return button
+    }()
+
     private let debouncer = Debouncer()
 
     init(presenter: MovieListPresenterInput) {
@@ -63,6 +77,7 @@ final class MovieListViewController: UIViewController {
     private func customizeViews() {
         view.backgroundColor = .white
         view.addSubview(tableview)
+        view.addSubview(switchPreferedMoviesButton)
         navigationItem.titleView = searchBar
     }
 }
@@ -72,6 +87,10 @@ final class MovieListViewController: UIViewController {
 private extension MovieListViewController {
     @objc func loadMoreData() {
         presenter.fetchMoreMovies()
+    }
+
+    @objc func changePreferedMovies() {
+        presenter.changePreferedMovies()
     }
 }
 
@@ -136,7 +155,8 @@ extension MovieListViewController: UISearchBarDelegate {
 extension MovieListViewController {
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            setTableViewConstrints()
+            setTableViewConstrints(),
+            setswitchPreferedMoviesButtonConstrints()
         ])
     }
 
@@ -146,6 +166,15 @@ extension MovieListViewController {
             tableview.frameLayoutGuide.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableview.frameLayoutGuide.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             tableview.frameLayoutGuide.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ]
+    }
+
+    private func setswitchPreferedMoviesButtonConstrints() -> [NSLayoutConstraint] {
+        [
+            switchPreferedMoviesButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -Layouts.marginLarge).with(priority: 1),
+            switchPreferedMoviesButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -Layouts.marginLarge),
+            switchPreferedMoviesButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -Layouts.marginLarge),
+            switchPreferedMoviesButton.heightAnchor.constraint(equalToConstant: Constants.buttonHeight)
         ]
     }
 }

@@ -2,6 +2,7 @@ import Moya
 
 enum API {
     case popular(page: Int)
+    case topRated(page: Int)
     case movie(movieId: Int)
     case search(query: String)
 
@@ -19,6 +20,8 @@ extension API: TargetType {
         switch self {
         case .popular:
             return "movie/popular"
+        case .topRated:
+            return "movie/top_rated"
         case .movie(let movieId):
             return "movie/\(movieId)"
         case .search:
@@ -37,6 +40,8 @@ extension API: TargetType {
     var task: Task {
         switch self {
         case .popular(let page):
+            return .requestParameters(parameters: ["api_key": API.apiKey, "page": page], encoding: URLEncoding.queryString)
+        case .topRated(let page):
             return .requestParameters(parameters: ["api_key": API.apiKey, "page": page], encoding: URLEncoding.queryString)
         case .movie:
             return .requestParameters(parameters: ["api_key": API.apiKey], encoding: URLEncoding.queryString)

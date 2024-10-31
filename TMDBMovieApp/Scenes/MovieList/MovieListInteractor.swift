@@ -1,6 +1,7 @@
 // sourcery: AutoMockable
 protocol MovieListInteractorInput: AnyObject {
     func getPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, MovieError>) -> Void)
+    func getTopRatedMovies(page: Int, completion: @escaping (Result<MovieResponse, MovieError>) -> Void)
     func getSearchResult(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> Void)
 }
 
@@ -19,6 +20,17 @@ final class MovieListInteractor {
 extension MovieListInteractor: MovieListInteractorInput {
     func getPopularMovies(page: Int, completion: @escaping (Result<MovieResponse, MovieError>) -> Void) {
         movieService.fetchPopularMovies(page: page) { result in
+            switch result {
+            case .success(let response):
+                completion(.success(response))
+            case .failure(let error):
+                completion(.failure(.getMoviesFailed))
+            }
+        }
+    }
+
+    func getTopRatedMovies(page: Int, completion: @escaping (Result<MovieResponse, MovieError>) -> Void) {
+        movieService.fetchTopRatedMovies(page: page) { result in
             switch result {
             case .success(let response):
                 completion(.success(response))
